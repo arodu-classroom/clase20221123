@@ -10,5 +10,12 @@
 
     <p>Nombre: <%= name %></p>
     <p>Cedula: <%= cedula %></p>
+
+    <form action="/save" method="post">
+      <input type="text" name="nombre" placeholder="Ingrese nombre"/>
+      <button type="submit">Enviar</button>
+    </form>
+
+
   </body>
 </html>
