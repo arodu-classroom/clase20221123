@@ -22,13 +22,12 @@ router.get('/otro', function(req, res, next) {
     name: nombre,
     cedula,
   });
+});
 
-  router.post('/save', function(req, res, next) {
-    console.log(req.body.nombre);
+router.post('/save', function(req, res, next) {
+  console.log(req.body.nombre);
 
-    res.send("Guardado usuario " + req.body.nombre)
-  });
-
+  res.send("Guardado usuario " + req.body.nombre)
 });
 
 module.exports = router;
